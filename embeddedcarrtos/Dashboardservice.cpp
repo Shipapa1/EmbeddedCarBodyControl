@@ -1,22 +1,17 @@
-// ---------------------------------------------------------------------------
-// DashboardService.cpp
 // DISPLAY service — prints the current BCM state to the Serial monitor
-// only when the dashboard button (pin 19) is pressed.
-//
+// only when the dashboard button pin 19 is pressed.
 // Responsibilities:
-//   • Poll GPIO 19 for a button press (active-LOW, INPUT_PULLUP)
-//   • On press: print a single BCM status snapshot to Serial
-//   • Debounce the button with a 200 ms delay
-//
+//   -Poll GPIO 19 for a button press (active-LOW, INPUT_PULLUP)
+//   -On press: print a single BCM status snapshot to Serial
+//   -Debounce the button with a 200 ms delay
 // Why on-demand instead of periodic?
 //   A real vehicle HMI (instrument cluster, head unit) only updates the
 //   display when the driver requests it or when a state change occurs —
 //   not on a blind timer. This pattern is more realistic and also reduces
 //   noise in the Serial monitor during development.
-//
 // Task affinity:
-//   Pinned to Core 1. Polls every 20 ms — same strategy as DoorService.
-// ---------------------------------------------------------------------------
+//   Pinned to Core 1. Polls every 20 ms same strategy as DoorService.
+
 
 #include <Arduino.h>
 #include "VehicleEvents.h"
