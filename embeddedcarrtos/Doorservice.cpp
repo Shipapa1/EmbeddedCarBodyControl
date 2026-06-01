@@ -1,18 +1,13 @@
-// ---------------------------------------------------------------------------
-// DoorService.cpp
-// PRODUCER service — monitors a physical button (pin 18) and publishes
+// PRODUCER service  monitors a physical button pin 18 and publishes
 // DOOR_LOCKED / DOOR_UNLOCKED events to the event bus.
-//
 // Responsibilities:
-//   • Poll GPIO pin 18 for button presses (active-LOW with INPUT_PULLUP)
-//   • Toggle the doorLocked shared state on each press
-//   • Publish a VehicleEvent so other services can react
-//   • Debounce the button with a 200 ms delay to filter contact bounce
-//
-// This service is a PRODUCER only — it never reads from the queue.
+//   -Poll GPIO pin 18 for button presses (active-LOW with INPUT_PULLUP)
+//   -Toggle the doorLocked shared state on each press
+//   -Publish a VehicleEvent so other services can react
+//   -Debounce the button with a 200 ms delay to filter contact bounce
+// This service is a PRODUCER only it never reads from the queue.
 // Other services decide what to do with door events; this service just
-// reports what happened. That separation is a core SoA principle.
-// ---------------------------------------------------------------------------
+// reports what happened. 
 
 #include <Arduino.h>
 #include "VehicleEvents.h"
