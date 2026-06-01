@@ -58,11 +58,7 @@ DashboardService ──reads──► doorLocked, headlightsOn, cabinTemp → Se
 4. Add remaining files as tabs (or use PlatformIO for proper folder support)
 5. Upload and open Serial Monitor at **115200 baud**
 
-## Test Cases
+## Schematic
 
-| Test | Action | Expected |
-|------|--------|----------|
-| 1 | Press button  | Door: UNLOCKED, LOCKED|
-| 2 | Press button2 | LED: On/OFF |
-| 3 | Turn potentiometer | Temp changes (60–90 °F) |
-| 4 | Press button3  | Current Car status menu |
+<img width="986" height="522" alt="image" src="https://github.com/user-attachments/assets/98516682-0160-4db1-a240-32d1102c713c" />
+
