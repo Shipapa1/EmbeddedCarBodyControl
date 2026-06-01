@@ -7,10 +7,8 @@ using FreeRTOS tasks and a Service-Oriented Architecture (SoA) event bus.
 
 ```
 BCM_Project/
-├── include/
 │   ├── VehicleEvents.h   — Shared event types, struct, and extern globals
 │   └── EventBus.h        — Queue handle declaration (middleware interface)
-├── src/
 │   ├── middleware/
 │   │   └── EventBus.cpp  — Queue definition and initialization
 │   ├── services/
