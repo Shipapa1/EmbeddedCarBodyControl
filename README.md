@@ -3,6 +3,9 @@
 A Software-Defined Vehicle (SDV) body control simulation running on an ESP32
 using FreeRTOS tasks and a Service-Oriented Architecture (SoA) event bus.
 
+Demo Link: https://www.youtube.com/watch?v=f6kENB_romU
+
+
 ## Project Structure
 
 ```
