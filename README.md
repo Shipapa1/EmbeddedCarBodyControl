@@ -123,13 +123,12 @@ Motor Controller ESP32 ──hosts AP──► WiFi network "ESP32ForMotors"
 ## Schematic
 <img width="986" height="522" alt="image" src="https://github.com/user-attachments/assets/98516682-0160-4db1-a240-32d1102c713c" />
 
-## Test Cases
+<img width="853" height="757" alt="Screenshot 2026-08-25 211100" src="https://github.com/user-attachments/assets/5d11b30d-d45b-4bb1-96eb-0953f990f8c4" />
 
-| Test | Action | Expected |
-|------|--------|----------|
-| 1 | Press door button | Door: UNLOCKED, LOCKED |
-| 2 | Press light button | LED: On/OFF |
-| 3 | Turn potentiometer | Temp changes (60–90 °F) |
-| 4 | Press status button | Current car status on LCD |
-| 5 | Visit `192.168.4.1` on phone/laptop | Drive controls page loads, motors respond |
-| 6 | Visit `192.168.4.22` on phone/laptop | Live BCM dashboard loads and auto-updates every second |
+
+## pictures
+
+<img width="864" height="649" alt="image" src="https://github.com/user-attachments/assets/599d9ced-37e5-43f3-a405-957fb9f4d97a" />
+
+
+
