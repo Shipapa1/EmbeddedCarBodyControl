@@ -59,7 +59,7 @@ MotorController_Project/
 ## Hardware
 
 ### BCM ESP32
-
+ 
 | Component       | ESP32 Pin |
 |----------------|-----------|
 | Push button for Unlock/lock    | GPIO 18   |
@@ -67,6 +67,12 @@ MotorController_Project/
 | Potentiometer   | GPIO 34   |
 | Push button for Status    | GPIO 19   |
 | Push button for Light     | GPIO 22   |
+| Nokia LCD — CS   | GPIO 33   |
+| Nokia LCD — RST  | GPIO 32   |
+| Nokia LCD — A0/DC | GPIO 25  |
+| Nokia LCD — SDA/MOSI | GPIO 26 |
+| Nokia LCD — SCK  | GPIO 27   |
+ 
 
 ### Motor Controller ESP32
 
